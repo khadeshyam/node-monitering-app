@@ -6,7 +6,7 @@ const heavyTask = () => {
 			if (random < 0.5) {
 				resolve({ message: 'Task completed', responseTime });
 			} else {
-				reject({ error: 'Error occurred', responseTime });
+				reject({ message: 'Error occurred', responseTime });
 			}
 		}, responseTime);
 	});
